@@ -24,7 +24,6 @@ def marcap_date(date):
                           'ForeignShares', 'ForeignRatio', 'Rank']]
         result = result[result['Date'] == date]
         result = result.sort_values(['Date','Rank'])
-        result = result.sort_va
     except Exception as e:
         return None
     result.reset_index(drop=True, inplace=True)
