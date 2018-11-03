@@ -24,7 +24,7 @@ plt.rcParams["axes.formatter.limits"] = -10000, 10000
 
 거래소의 시가총액 데이터는 특정 일자의 전종목, 시가총액, 주식수 등의 데이터를 포함하고 있습니다.  다음  링크로 바로 접근하거나  메뉴에서 다음과 같은 순서로접근할 수 있습니다. 
 
-http://marketdata.krx.co.kr/contents/MKD/04/0406/04060100/MKD04060100.jsp
+[http://marketdata.krx.co.kr/contents/MKD/04/0406/04060100/MKD04060100.jsp]()
 
 시장정보 → 주식 → 순위정보 → 시가총액 상/하위
 
