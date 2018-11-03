@@ -68,10 +68,10 @@ git 명령을 사용하여 깃허브 저장소를 복제(clone)한다.
 ```
 
     'marcap'에 복제합니다...
-    remote: Enumerating objects: 7, done.[K
-    remote: Counting objects: 100% (7/7), done.[K
-    remote: Compressing objects: 100% (7/7), done.[K
-    remote: Total 76 (delta 1), reused 1 (delta 0), pack-reused 69[K
+    remote: Enumerating objects: 7, done.
+    remote: Counting objects: 100% (7/7), done.
+    remote: Compressing objects: 100% (7/7), done.
+    remote: Total 76 (delta 1), reused 1 (delta 0), pack-reused 69
     오브젝트 묶음 푸는 중: 100% (76/76), 완료.
     연결을 확인하는 중입니다... 완료.
     파일을 가져옵니다: 100% (27/27), 완료.
