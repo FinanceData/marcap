@@ -4,7 +4,7 @@
 * 한국거래소(KRX)에서 일자별 시가총액 순위 데이터
 * 1995년~2018년(23년간) 데이터를 일자별 가격 포함 (CSV)
 
-본 문서는 개요입니다. 더 상세한 설명은 [여기](http://nbviewer.jupyter.org/9ef9c9c87ba073338fa65a87643dc654)를 참고하세요
+본 문서는 개요 문서 입니다. 더 상세한 설명은 [여기](http://nbviewer.jupyter.org/9ef9c9c87ba073338fa65a87643dc654)를 참고하세요
     
 
 ## 상장회사 시가총액 데이터
@@ -83,20 +83,6 @@ df.head()
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -223,9 +209,6 @@ df.head()
     </tr>
   </tbody>
 </table>
-</div>
-
-
 
 
 ```python
@@ -235,17 +218,7 @@ df_stock = marcap_date_range('2017-01-01', '2018-12-31', code)
 df_stock['MarcapRatio'].plot(figsize=(16, 6))
 ```
 
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7f138859f400>
-
-
-
-
 ![png](output_9_1.png)
-
-
 
 ```python
 import pandas as pd
@@ -268,22 +241,6 @@ df_merge.head(10)
 
 
 
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -378,10 +335,6 @@ df_merge.head(10)
     </tr>
   </tbody>
 </table>
-</div>
-
-
-
 
 ```python
 # 섹터별 시가총액
@@ -389,23 +342,6 @@ df_sector_corp_marcap = df_merge.groupby('Sector').sum().sort_values('Marcap', a
 df_sector_corp_marcap
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -460,25 +396,13 @@ df_sector_corp_marcap
     </tr>
   </tbody>
 </table>
-</div>
-
-
 
 
 ```python
 df_sector_corp_marcap[::-1].plot(kind='barh', figsize=(16, 10))
 ```
 
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7f1388748908>
-
-
-
-
 ![png](output_12_1.png)
-
 
 
 ```python
@@ -486,13 +410,6 @@ df_sector_corp_marcap[::-1].plot(kind='barh', figsize=(16, 10))
 
 df_stock['MarcapRatio'].plot(figsize=(16, 6))
 ```
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7f1388901f28>
-
-
 
 
 ![png](output_13_1.png)
@@ -508,23 +425,6 @@ df_master = pd.read_csv(url, dtype={'Symbol':str, 'Industy_code':str} )
 df_master.head(10)
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -652,9 +552,6 @@ df_master.head(10)
     </tr>
   </tbody>
 </table>
-</div>
-
-
 
 
 ```python
@@ -664,20 +561,6 @@ df_master[df_master['Symbol'] == '005930']
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -706,9 +589,6 @@ df_master[df_master['Symbol'] == '005930']
     </tr>
   </tbody>
 </table>
-</div>
-
-
 
 
 ```python
@@ -727,21 +607,6 @@ df_merge.head()
 
 
 
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -796,9 +661,6 @@ df_merge.head()
     </tr>
   </tbody>
 </table>
-</div>
-
-
 
 
 ```python
@@ -829,13 +691,6 @@ df_sector_corp_counts.plot.pie(figsize=(8, 8))
 ```
 
 
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7f13885a9978>
-
-
-
-
 ![png](output_18_1.png)
 
 
@@ -847,22 +702,6 @@ df_sector_corp_marcap
 ```
 
 
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -957,22 +796,11 @@ df_sector_corp_marcap
     </tr>
   </tbody>
 </table>
-</div>
-
-
 
 
 ```python
 df_sector_corp_marcap[::-1].plot(kind='barh', figsize=(16, 10))
 ```
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7f138878f048>
-
-
-
 
 ![png](output_20_1.png)
 
@@ -996,6 +824,6 @@ df['Marcap_trillion'].sum()  # 시가총액 전체 (조단위)
 시가총액 컬럼 df['Marcap_trillion']을 모두 더하면, 한국 주식시장 시가총액은 1,843조원 이다. (2018년 10월 1일 기준) 
 
 # 더 상세한 설명
-더 상세한 설명은 [여기](http://nbviewer.jupyter.org/9ef9c9c87ba073338fa65a87643dc654)를 참고하세요
+이 문서는 개요 문서입니다. 더 상세한 설명은 [여기](http://nbviewer.jupyter.org/9ef9c9c87ba073338fa65a87643dc654)를 참고하세요
 
 #### 2018 FinanceData.KR [facebook.com/financedata](http://facebook.com/financedata)
