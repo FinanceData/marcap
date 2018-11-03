@@ -7,18 +7,6 @@
 본 문서는 개요입니다. 더 상세한 설명은 [여기](http://nbviewer.jupyter.org/9ef9c9c87ba073338fa65a87643dc654)를 참고하세요
     
 
-```python
-%matplotlib inline
-import matplotlib.pyplot as plt
-
-plt.rcParams["font.family"] = 'nanummyeongjo'
-plt.rcParams["figure.figsize"] = (14,4)
-plt.rcParams["axes.grid"] = True
-
-plt.rcParams["axes.formatter.useoffset"] = False
-plt.rcParams["axes.formatter.limits"] = -10000, 10000
-```
-
 ## 상장회사 시가총액 데이터
 
 거래소의 시가총액 데이터는 특정 일자의 전종목, 시가총액, 주식수 등의 데이터를 포함하고 있습니다.  다음  링크로 바로 접근하거나  메뉴에서 다음과 같은 순서로접근할 수 있습니다. 
