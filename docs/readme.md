@@ -1008,7 +1008,6 @@ df['Marcap_trillion'].sum()  # 시가총액 전체 (조단위)
 시가총액 컬럼 df['Marcap_trillion']을 모두 더하면, 한국 주식시장 시가총액은 1,843조원 이다. (2018년 10월 1일 기준) 
 
 # 더 상세한 설명
-
-http://nbviewer.jupyter.org/9ef9c9c87ba073338fa65a87643dc654    
+더 상세한 설명은 [여기](http://nbviewer.jupyter.org/9ef9c9c87ba073338fa65a87643dc654)를 참고하세요
 
 #### 2018 FinanceData.KR [facebook.com/financedata](http://facebook.com/financedata)
