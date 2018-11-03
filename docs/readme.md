@@ -4,9 +4,8 @@
 * 한국거래소(KRX)에서 일자별 시가총액 순위 데이터
 * 1995년~2018년(23년간) 데이터를 일자별 가격 포함 (CSV)
 
-본 문서는 개요입니다. 더 상세한 설명은 다음 문서를 참고하세요<br>
-http://nbviewer.jupyter.org/9ef9c9c87ba073338fa65a87643dc654    
-
+본 문서는 개요입니다. 더 상세한 설명은 [여기](http://nbviewer.jupyter.org/9ef9c9c87ba073338fa65a87643dc654)를 참고하세요
+    
 
 ```python
 %matplotlib inline
