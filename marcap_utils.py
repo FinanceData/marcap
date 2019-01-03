@@ -16,8 +16,8 @@ def marcap_date(date):
     csv_file = 'marcap/data/marcap-%s.csv.gz' % (date.year)
 
     result = None
-    try:
-        df = pd.read_csv(csv_file, dtype={'Code':str}, parse_dates=['Date'])
+    try: 
+        df = pd.read_csv(csv_file, dtype={'Code':str, 'ChagesRatio':float}, parse_dates=['Date'])
         result = df[[ 'Date', 'Code', 'Name', 
                           'Open', 'High', 'Low', 'Close', 'Volume', 'Amount', 
                           'Changes', 'ChagesRatio', 'Marcap', 'Stocks', 'MarcapRatio', 
@@ -43,7 +43,7 @@ def marcap_date_range(start, end, code=None):
     for year in range(start.year, end.year + 1):
         try:
             csv_file = 'marcap/data/marcap-%s.csv.gz' % (year)
-            df = pd.read_csv(csv_file, dtype={'Code':str}, parse_dates=['Date'])
+            df = pd.read_csv(csv_file, dtype={'Code':str, 'ChagesRatio':float}, parse_dates=['Date'])
             df_list.append(df)
         except Exception as e:
             pass
