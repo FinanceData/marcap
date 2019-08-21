@@ -129,6 +129,6 @@ df = marcap_date_range('1995-05-02', '2019-04-30')
 
 
 
-보다 상세한 내용은 [튜토리얼 문서](https://github.com/FinanceData/marcap/blob/master/marcap-tutorial.ipynb)를 참고하십시오. [구글 Colab에서 바로 실행](https://colab.research.google.com/github/FinanceData/marcap/blob/master/marcap-tutorial.ipynb)해 볼 수 있습니다
+보다 상세한 내용은 [튜토리얼 문서](https://nbviewer.jupyter.org/github/FinanceData/marcap/blob/master/marcap-tutorial.ipynb)를 참고하십시오. [구글 Colab에서 바로 실행](https://colab.research.google.com/github/FinanceData/marcap/blob/master/marcap-tutorial.ipynb)해 볼 수 있습니다
 
 #### 2018-2019 [FinanceData.KR]()
