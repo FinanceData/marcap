@@ -73,7 +73,7 @@ git 명령으로 깃허브의 저장소를 복제(clone)합니다. 데이터와 
 
 
 ```
-! git clone "https://github.com/FinanceData/marcap.git" marcap
+git clone "https://github.com/FinanceData/marcap.git" marcap
 ```
 
 데이터는 ./marcap/data 디렉토리에 있으며 년도별 CSV 파일로 구성되어 있습니다. 개별 파일은 .gz으로 압축되어 있습니다.

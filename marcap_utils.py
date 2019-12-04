@@ -35,7 +35,7 @@ def marcap_date(date):
   result.set_index('Date', inplace=True)
   return result[result['Volume'] > 0]
 
-def marcap_date_range(start, end, code=None):
+def marcap_date_range(start, end=None, code=None):
   '''
   지정한 기간 데이터 가져오기
   :param datetime start: 시작일
@@ -44,7 +44,7 @@ def marcap_date_range(start, end, code=None):
   :return: DataFrame
   '''
   start = pd.to_datetime(start)
-  end = pd.to_datetime(end)
+  end = start if end==None else pd.to_datetime(end)
   df_list = []
 
   dtypes={'Code':str, 'Name':str, 
