@@ -85,17 +85,11 @@ marcap 시가총액 데이터셋에는 데이터를 날짜별로 혹은 기간�
 다음과 같이 import 하여 사용합니다.
 
 ```python 
-from marcap import marcap_date, marcap_date_range
+from marcap import marcap_data
 ```
 
-### marcap_date(date)
-지정한 날짜의 시가총액 순위 데이터를 읽어 옵니다
-
-### marcap_date_range(start, end, code=None)
-지정한 기간 데이터 읽어옵니다. 종목코드(code)를 지정하면 해당 종목에 대한 데이터를 지정한 기간만큼 읽어 옵니다.
-
-
-marcap_date(), marcap_date_range() 두 함수 모두 거래량(volume)이 0인 행(row)는 제거하고 반환합니다.
+### marcap_data(start, end=None, code=None)
+지정한 기간 데이터 읽어옵니다. 종목코드(code)를 지정하면 해당 종목에 대한 데이터를 지정한 기간만큼 읽어 옵니다. 거래량(volume)이 0인 행(row)는 제거하고 반환합니다.
 
 
 간단한 사용 예제를 살펴보면,
@@ -103,16 +97,19 @@ marcap_date(), marcap_date_range() 두 함수 모두 거래량(volume)이 0인 �
 
 ```python
 # 특정 날짜를 지정하여 읽기
-df = marcap_date('2019-5-2')
+df = marcap_data('2019-5-2')
 
 # 기간을 지정하여 읽기 (2018년 1년간 전종목)
-df = marcap_date_range('2018-01-01', '2018-12-31')
+df = marcap_data('2018-01-01', '2018-12-31')
 
 # 기간을 지정하여, 특정 종목 읽기 (2018년 1년간 특정 종목)
-df = marcap_date_range('2018-01-01', '2018-12-31', '005930')
+df = marcap_data('2018-01-01', '2018-12-31', code='005930')
+
+# 특정 종목 특정 하루 ()
+df = marcap_data('2018-12-28', code='005930')
 
 # 24년간 데이터 모두 읽기
-df = marcap_date_range('1995-05-02', '2019-04-30')
+df = marcap_data('1995-05-02', '2019-04-30')
 ```
 
 ## 활용
