@@ -3,9 +3,9 @@
 <img width="80%" border="2" src="https://i.imgur.com/NeFOe4Y.png" >
 
 * 한국거래소(KRX)에서 일자별 시가총액 순위 데이터
-* 1995-05-02 ~ 2019-11-30 (24년간), 1천만건 (CSV)
+* 1995-05-02 ~ 2020-03-27 (25년간), 1천만건+ (CSV)
 
-#### 2018-2019 [FinanceData.KR](http://facebook.com/financedata)
+#### 2018-2020 [FinanceData.KR](http://facebook.com/financedata)
 
 ## 시가총액
 시가총액(時價總額, market capitalization)은 주식 값의 총합 즉, `주가 X 발행주식수`이며, 간단히 특정 회사의 경제적 크기를 말합니다.
@@ -34,14 +34,14 @@ http://marketdata.krx.co.kr/contents/MKD/04/0406/04060100/MKD04060100.jsp
 
 ## 시가총액(marcap) 데이터셋의 구성
 
-시가총액(marcap) 데이터셋은 1995-05-02 ~ 2019-04-30일까지 24년간 일자별, 17개 컬럼, 1천만건 데이터 입니다.
+시가총액(marcap) 데이터셋은 1995-05-02 ~ 2019-03-27일까지 25년간 일자별, 17개 컬럼, 1천만건+ 데이터 입니다.
 압축하지 않은 상태에서  `1.3G` 분량 입니다.
 
 https://financedata.github.io/marcap/
 
 * 컬럼: 17개
-* 건수: 10,440,839 건(row)
-* 크기: 1.3G
+* 건수: 10,629,155 건(row)
+* 크기: 1.3G+
 
 
 #### 컬럼 구성 
@@ -109,7 +109,7 @@ df = marcap_data('2018-01-01', '2018-12-31', code='005930')
 df = marcap_data('2018-12-28', code='005930')
 
 # 24년간 데이터 모두 읽기
-df = marcap_data('1995-05-02', '2019-04-30')
+df = marcap_data('1995-05-02', '2020-03-27')
 ```
 
 ## 활용
@@ -126,4 +126,4 @@ df = marcap_data('1995-05-02', '2019-04-30')
 
 보다 상세한 내용은 [튜토리얼 문서](https://nbviewer.jupyter.org/github/FinanceData/marcap/blob/master/marcap-tutorial.ipynb)를 참고하십시오. [구글 Colab에서 바로 실행](https://colab.research.google.com/github/FinanceData/marcap/blob/master/marcap-tutorial.ipynb)해 볼 수 있습니다
 
-#### 2018-2019 [FinanceData.KR]()
+#### 2018-2020 [FinanceData.KR]()
