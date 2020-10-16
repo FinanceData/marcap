@@ -3,7 +3,7 @@
 <img width="80%" border="2" src="https://i.imgur.com/NeFOe4Y.png" >
 
 * 한국거래소(KRX)에서 일자별 시가총액 순위 데이터
-* 1995-05-02 ~ 2020-03-27 (25년간), 1천만건+ (CSV)
+* 1995-05-02 ~ 2020-10-15 (25년간), 1천만건+ (CSV)
 
 #### 2018-2020 [FinanceData.KR](http://facebook.com/financedata)
 
