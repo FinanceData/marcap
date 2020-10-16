@@ -40,7 +40,7 @@ http://marketdata.krx.co.kr/contents/MKD/04/0406/04060100/MKD04060100.jsp
 https://financedata.github.io/marcap/
 
 * 컬럼: 17개
-* 건수: 10,629,155 건(row)
+* 건수: 10,946,427 건(row)
 * 크기: 1.3G+
 
 
@@ -128,7 +128,7 @@ df = marcap_data('1995-05-02', '2020-03-27')
 
 
 ## Last Updated
-2019-03-27
+2020-10-16
 
 
 #### 2018-2020 [FinanceData.KR]()
