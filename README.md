@@ -49,7 +49,7 @@ Date (날짜)를 인덱스(DatetimeIndex)로 포함하고 있으며, 컬럼 구�
 
 * Date : 날짜 (DatetimeIndex)
 * Code : 종목코드
-* Name : 종명이름 
+* Name : 종목이름 
 * Open : 시가
 * High : 고가
 * Low : 저가
