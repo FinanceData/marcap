@@ -18,9 +18,10 @@ def marcap_data(start, end=None, code=None):
   df_list = []
 
   dtypes={'Code':str, 'Name':str, 
-          'Open':float, 'High':float, 'Low':float, 'Close':float, 'Volume':float, 'Amount':float,
-          'Changes':float, 'ChagesRatio':float, 'Marcap':float, 'Stocks':float, 'MarcapRatio':float, 
-          'ForeignShares':float, 'ForeignRatio':float, 'Rank':float}
+          'Open':int, 'High':int, 'Low':int, 'Close':int, 'Volume':int, 'Amount':int,
+          'Changes':int, 'ChangeCode':str, 'ChagesRatio':float, 'Marcap':int, 'Stocks':int,
+          'MarketId':str, 'Market':str, 'Dept':str,
+          'Rank':int}
 
   for year in range(start.year, end.year + 1):
     try:
