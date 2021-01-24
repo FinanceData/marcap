@@ -1,4 +1,4 @@
-# 시가총액 데이터셋(marcap) 튜토리얼 - 소개
+# 시가총액 데이터셋(marcap)
 
 <img src="https://i.imgur.com/b9t5FAA.png?1" width="60%">
 
