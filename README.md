@@ -82,7 +82,7 @@ git 명령으로 깃허브의 저장소를 복제(clone)합니다. 데이터와 
 
 
 ```
-! git clone "https://github.com/FinanceData/marcap.git" marcap
+!git clone "https://github.com/FinanceData/marcap.git" marcap
 ```
 
 데이터는 ./marcap/data 디렉토리에 있으며 년도별 CSV 파일로 구성되어 있습니다. 개별 파일은 .gz으로 압축되어 있습니다.
@@ -97,10 +97,10 @@ marcap 시가총액 데이터셋에는 데이터를 날짜별로 혹은 기간�
 from marcap import marcap_data
 ```
 
-### marcap_date(date)
+### marcap_data(date)
 지정한 날짜의 시가총액 순위 데이터를 읽어 옵니다
 
-### marcap_date_range(start, end, code=None)
+### marcap_data(start, end, code=None)
 지정한 기간 데이터 읽어옵니다. 종목코드(code)를 지정하면 해당 종목에 대한 데이터를 지정한 기간만큼 읽어 옵니다.
 
 간단한 사용 예제를 살펴보면,
