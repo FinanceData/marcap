@@ -16,15 +16,6 @@ def marcap_data(start, end=None, code=None):
     start = pd.to_datetime(start)
     end = start if end==None else pd.to_datetime(end)
     df_list = []
-
-#     dtypes={'Code':str, 'Name':str, 
-#             'Open':int, 'High':int, 'Low':int, 'Close':int, 'Volume':int, 'Amount':int,
-#             'Changes':int, 'ChangeCode':str, 'ChagesRatio':float, 'Marcap':int, 'Stocks':int,
-#             'MarketId':str, 'Market':str, 'Dept':str,
-#             'Rank':int}
-
-# Amount, Marcap을 int 타입으로 변환할 수 없다는 에러메시지 발생
-
     dtypes={'Code':str, 'Name':str, 
             'Open':int, 'High':int, 'Low':int, 'Close':int, 'Volume':int, 'Amount':float,
             'Changes':int, 'ChangeCode':str, 'ChagesRatio':float, 'Marcap':float, 'Stocks':int,
