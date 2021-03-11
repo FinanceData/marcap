@@ -124,10 +124,10 @@ df = marcap_data('1995-05-02', '2021-01-15')
 
 보다 상세한 내용은 주피터 노트북으로 튜토리얼 문서를 참고하십시오. (구글 Colab에서도 실행해 볼 수 있습니다)
 
-1. [marcap-tutorial-01-reading-data.ipynb - 데이터 읽기](https://github.com/FinanceData/marcap/blob/master/marcap-tutorial-01-reading-data.ipynb)
-1. [marcap-tutorial-02-stocks.ipynb - 종목별 분석](https://github.com/FinanceData/marcap/blob/master/marcap-tutorial-02-stocks.ipynb)
-1. [marcap-tutorial-03-adjust-price.ipynb - 수정가격](https://github.com/FinanceData/marcap/blob/master/marcap-tutorial-03-adjust-price.ipynb)
-1. [marcap-tutorial-04-sector-analysis.ipynb - 섹터분석](https://github.com/FinanceData/marcap/blob/master/marcap-tutorial-04-sector-analysis.ipynb)
+1. [marcap-tutorial-01-reading-data.ipynb - 데이터 읽기](http://nbviewer.jupyter.org/fdd6518fa764911684b341f99bb61382)
+1. [marcap-tutorial-02-stocks.ipynb - 종목별 분석](http://nbviewer.jupyter.org/51e998c745d8a05996f8967823dbf634)
+1. [marcap-tutorial-03-adjust-price.ipynb - 수정가격](http://nbviewer.jupyter.org/b92cc4b901e7988956104b5f6483ee2e)
+1. [marcap-tutorial-04-sector-analysis.ipynb - 섹터분석](http://nbviewer.jupyter.org/157e4083f482c8cf2c30e68ce7f7b942)
 
 
 
