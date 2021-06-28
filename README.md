@@ -7,8 +7,8 @@
 
 ## Quick Start
 
-```
-!git clone "https://github.com/FinanceData/marcap.git" marcap
+```bash
+git clone "https://github.com/FinanceData/marcap.git" marcap
 ```
 
 ```python 
@@ -55,7 +55,7 @@ http://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201020101
 
 시가총액(marcap) 데이터셋은 1995-05-02 ~ 2020-12-31 (25년간)일자별, 18개 컬럼, 1천만건 데이터 입니다. 압축하지 않은 상태에서  약 '1.6G' 분량 입니다.
 
-** github 저장소에 현재 날짜 데이터까지 매일 자동 업데이트 됩니다.** 
+**github 저장소에 현재 날짜 데이터까지 매일 자동 업데이트 됩니다.** 
 따라서 git 저장소를 pull 하시면 매일 전종목 가격 데이터를 업데이트 하실 수 있습니다. 
 
 https://financedata.github.io/marcap/
@@ -94,10 +94,8 @@ Date (날짜)를 인덱스(DatetimeIndex)로 포함하고 있으며, 컬럼 구�
 
 git 명령으로 깃허브의 저장소를 복제(clone)합니다. 데이터와 데이터를 읽는데 도움이 되는 간단한 파이썬 유틸리티 함수가 포함되어 있습니다.
 
-
-
-```
-!git clone "https://github.com/FinanceData/marcap.git" marcap
+```bash
+git clone "https://github.com/FinanceData/marcap.git" marcap
 ```
 
 데이터는 ./marcap/data 디렉토리에 있으며 년도별 CSV 파일로 구성되어 있습니다. 개별 파일은 .gz으로 압축되어 있습니다.
