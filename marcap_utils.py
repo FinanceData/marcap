@@ -18,11 +18,11 @@ def marcap_data(start, end=None, code=None):
   df_list = []
 
   dtypes={'Code':str, 'Name':str, 
-          'Open':int, 'High':int, 'Low':int, 'Close':int, 'Volume':int, 'Amount':int,
-          'Changes':int, 'ChangeCode':str, 'ChagesRatio':float, 'Marcap':int, 'Stocks':int,
+          'Open':int, 'High':int, 'Low':int, 'Close':int, 'Volume':int, 'Amount':float,
+          'Changes':int, 'ChangeCode':str, 'ChagesRatio':float, 'Marcap':float, 'Stocks':int,
           'MarketId':str, 'Market':str, 'Dept':str,
           'Rank':int}
-
+    
   for year in range(start.year, end.year + 1):
     try:
       csv_file = 'marcap/data/marcap-%s.csv.gz' % (year)
