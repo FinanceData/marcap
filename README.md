@@ -5,9 +5,24 @@
 * 한국거래소(KRX)에서 일자별 시가총액 순위 데이터
 * 1995-05-02 ~ 2020-12-31 (26년간), 1천만건 이상
 
-#### 2018 - 2021 [FinanceData.KR]()
+## Quick Start
 
+```
+!git clone "https://github.com/FinanceData/marcap.git" marcap
+```
 
+```python 
+from marcap import marcap_data
+
+# 특정 날짜 전종목
+df = marcap_data('2021-01-21') 
+
+# 특정 기간 전종목
+df = marcap_data('2020-01-01', '2020-12-31') 
+
+# 특정 기간 단일 종목
+df = marcap_data('2021-01-01', '2021-01-31', code='005930') 
+```
 
 ## 시가총액
 시가총액(時價總額, market capitalization)은 주식 값의 총합 즉, `주가 X 발행주식수`이며, 간단히 특정 회사의 경제적 크기를 말합니다.
@@ -130,5 +145,4 @@ df = marcap_data('1995-05-02', '2021-01-15')
 1. [marcap-tutorial-04-sector-analysis.ipynb - 섹터분석](http://nbviewer.jupyter.org/157e4083f482c8cf2c30e68ce7f7b942)
 
 
-
-#### 2018-2021 [FinanceData.KR]()
+**2018-2021 [FinanceData.KR]()**
