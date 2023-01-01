@@ -17,10 +17,10 @@ def marcap_data(start, end=None, code=None):
   end = start if end==None else pd.to_datetime(end)
   df_list = []
 
-  dtypes={'Code':np.str, 'Name':np.str, 
+  dtypes={'Code':np.str_, 'Name':np.str_, 
           'Open':np.int64, 'High':np.int64, 'Low':np.int64, 'Close':np.int64, 'Volume':np.int64, 'Amount':np.int64,
-          'Changes':np.int64, 'ChangeCode':np.str, 'ChagesRatio':np.float64, 'Marcap':np.int64, 'Stocks':np.int64,
-          'MarketId':np.str, 'Market':np.str, 'Dept':np.str,
+          'Changes':np.int64, 'ChangeCode':np.str_, 'ChagesRatio':np.float64, 'Marcap':np.int64, 'Stocks':np.int64,
+          'MarketId':np.str_, 'Market':np.str_, 'Dept':np.str_,
           'Rank':np.int64}
     
   for year in range(start.year, end.year + 1):
