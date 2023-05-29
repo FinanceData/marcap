@@ -3,7 +3,7 @@
 <img src="https://i.imgur.com/b9t5FAA.png?1" width="60%">
 
 * 한국거래소(KRX)에서 일자별 시가총액 순위 데이터
-* 1995-05-02 ~ 2020-12-31 (26년간), 1천만건 이상
+* 1995-05-02 ~ 현재 (28년간), 매일 업데이트, 1천만건 이상
 
 ## Quick Start
 
@@ -34,7 +34,7 @@ df = marcap_data('2021-01-01', '2021-01-31', code='005930')
 
 
 ## 상장종목 시가총액 데이터
-상장종목에 대한 가격과 시가총액 데이터는 [한국거래소](http://marketdata.krx.co.kr) 페이지에서 손쉽게 얻을 수 있습니다. 
+상장종목에 대한 가격과 시가총액 데이터는 [한국거래소](http://data.krx.co.kr) 페이지에서 손쉽게 얻을 수 있습니다. 
 
 http://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201020101
 
@@ -53,16 +53,15 @@ http://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201020101
 
 ## 시가총액(marcap) 데이터셋의 구성
 
-시가총액(marcap) 데이터셋은 1995-05-02 ~ 2020-12-31 (25년간)일자별, 18개 컬럼, 1천만건 데이터 입니다. 압축하지 않은 상태에서  약 '1.6G' 분량 입니다.
+시가총액(marcap) 데이터셋은 1995-05-02 ~ 현재(28년간)일자별, 18개 컬럼, 1천만건 이상 데이터 입니다. 압축하지 않은 상태에서  약 '1.8G' 분량 입니다.
 
 **github 저장소에 현재 날짜 데이터까지 매일 자동 업데이트 됩니다.** 
 따라서 git 저장소를 pull 하시면 매일 전종목 가격 데이터를 업데이트 하실 수 있습니다. 
 
-https://financedata.github.io/marcap/
-
+https://financedata.github.io/marcap/ (2023-05-30 기준)
 * 컬럼: 18개
-* 건수: 11,099,879 건(row)
-* 크기: 1.6G
+* 건수: 1천 2백만건(row)
+* 크기: 1.8G
 
 
 #### 컬럼 구성(18개)
@@ -133,14 +132,4 @@ df = marcap_data('2021-01-01', '2021-01-31', code='005930')
 df = marcap_data('1995-05-02', '2021-01-15')
 ```
 
-## 시가총액 데이터셋(marcap) 튜토리얼
-
-보다 상세한 내용은 주피터 노트북으로 튜토리얼 문서를 참고하십시오. (구글 Colab에서도 실행해 볼 수 있습니다)
-
-1. [marcap-tutorial-01-reading-data.ipynb - 데이터 읽기](http://nbviewer.jupyter.org/fdd6518fa764911684b341f99bb61382)
-1. [marcap-tutorial-02-stocks.ipynb - 종목별 분석](http://nbviewer.jupyter.org/51e998c745d8a05996f8967823dbf634)
-1. [marcap-tutorial-03-adjust-price.ipynb - 수정가격](http://nbviewer.jupyter.org/b92cc4b901e7988956104b5f6483ee2e)
-1. [marcap-tutorial-04-sector-analysis.ipynb - 섹터분석](http://nbviewer.jupyter.org/157e4083f482c8cf2c30e68ce7f7b942)
-
-
-**2018-2021 [FinanceData.KR]()**
+**2018-2023 [FinanceData.KR]()**
