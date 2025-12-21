@@ -16,17 +16,14 @@ def marcap_data(start, end=None, code=None):
   start = pd.to_datetime(start)
   end = start if end==None else pd.to_datetime(end)
   df_list = []
-
-  dtypes={'Code':np.str_, 'Name':np.str_, 
-          'Open':np.int64, 'High':np.int64, 'Low':np.int64, 'Close':np.int64, 'Volume':np.int64, 'Amount':np.int64,
-          'Changes':np.int64, 'ChangeCode':np.str_, 'ChagesRatio':np.float64, 'Marcap':np.int64, 'Stocks':np.int64,
-          'MarketId':np.str_, 'Market':np.str_, 'Dept':np.str_,
-          'Rank':np.int64}
     
   for year in range(start.year, end.year + 1):
     try:
-      csv_file = 'marcap/data/marcap-%s.csv.gz' % (year)
-      df = pd.read_csv(csv_file, dtype=dtypes, parse_dates=['Date'])
+      parquet_file = 'marcap/data/marcap-%s.parquet' % (year)
+      df = pd.read_parquet(parquet_file)
+      # Date 컬럼이 인덱스가 아닌 경우 datetime으로 변환
+      if 'Date' in df.columns:
+        df['Date'] = pd.to_datetime(df['Date'])
       df_list.append(df)
     except Exception as e:
       print(e)

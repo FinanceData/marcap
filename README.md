@@ -13,13 +13,13 @@ git clone "https://github.com/FinanceData/marcap.git" marcap
 from marcap import marcap_data
 
 # 특정 날짜 전종목
-df = marcap_data('2021-01-21') 
+df = marcap_data('2025-01-21') 
 
 # 특정 기간 전종목
-df = marcap_data('2020-01-01', '2020-12-31') 
+df = marcap_data('2024-01-01', '2024-12-31') 
 
 # 특정 기간 단일 종목
-df = marcap_data('2021-01-01', '2021-01-31', code='005930') 
+df = marcap_data('2025-01-01', '2025-01-31', code='005930') 
 ```
 
 ## 시가총액
