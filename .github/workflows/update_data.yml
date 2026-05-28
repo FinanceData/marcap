@@ -1,0 +1,41 @@
+name: Update KRX Marcap Dataset
+
+on:
+  schedule:
+    # Runs at 18:30 KST (09:30 UTC) Monday through Friday
+    - cron: '30 9 * * 1-5'
+  workflow_dispatch: # Allows manual triggering from GitHub UI
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install uv
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
+
+      - name: Install dependencies
+        run: |
+          uv pip install --system pandas numpy requests pyarrow
+
+      - name: Run Update Script
+        env:
+          KRX_ID: ${{ secrets.KRX_ID }}
+          KRX_PW: ${{ secrets.KRX_PW }}
+          # START_YEAR is omitted to auto-default to current year in GHA environment
+        run: |
+          python krx_marcap.py
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff-index --quiet HEAD || (git commit -m "auto-update dataset [skip ci]" && git push origin master)
